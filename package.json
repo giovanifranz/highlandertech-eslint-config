@@ -1,6 +1,6 @@
 {
-  "name": "eslint-config-highlandertech",
-  "version": "1.0.0",
+  "name": "@highlandertech/eslint-config",
+  "version": "1.0.1",
   "description": "HighlanderTech ESlint Config",
   "main": "index.js",
   "private": false,
