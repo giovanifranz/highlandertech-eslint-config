@@ -1,3 +1,5 @@
+const prettierConfig = require("./prettier.js");
+
 module.exports = {
   env: {
     browser: true,
@@ -5,26 +7,26 @@ module.exports = {
     jest: true,
   },
   extends: [
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
     "standard",
     "airbnb",
-    "prettier"
+    "prettier",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
-    ecmaVersion: '12',
-    sourceType: 'module'
+    ecmaVersion: "12",
+    sourceType: "module",
   },
   plugins: [
-    'react',
-    'jsx-a11y',
-    '@typescript-eslint',
+    "react",
+    "jsx-a11y",
+    "@typescript-eslint",
     "simple-import-sort",
-    "prettier"
+    "prettier",
   ],
   settings: {
     "import/resolver": {
@@ -38,17 +40,7 @@ module.exports = {
     },
   },
   rules: {
-    "prettier/prettier": [
-      "error",
-      {
-        printWidth: 80,
-        trailingComma: "all",
-        semi: true,
-        tabWidth: 2,
-        arrowParens: "always",
-        singleQuote: true,
-      },
-    ],
+    "prettier/prettier": ["error", prettierConfig],
     "react/jsx-filename-extension": [1, { extensions: [".tsx", ".ts"] }],
     "react/react-in-jsx-scope": "off",
     "import/extensions": [
@@ -100,10 +92,11 @@ module.exports = {
     "react/jsx-props-no-spreading": "off",
     "no-undef": "off",
     "no-use-before-define": "off",
-    '@typescript-eslint/no-use-before-define': 'error',
+    "@typescript-eslint/no-use-before-define": "error",
     "@typescript-eslint/no-unused-vars": "error",
-    '@import/no-extraneous-dependencies': [
-      "off", { "devDependencies": ["**/*.stories.tsx","**.*.test.tsx"] }
+    "@import/no-extraneous-dependencies": [
+      "off",
+      { devDependencies: ["**/*.stories.tsx", "**.*.test.tsx"] },
     ],
     "no-nested-ternary": "off",
     "no-shadow": "off",
