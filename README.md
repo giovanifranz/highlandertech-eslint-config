@@ -1,4 +1,4 @@
-# Rocketseat ESLint config
+# HighlanderTech ESLint config
 
 ## Whats included?
 
