@@ -104,5 +104,6 @@ module.exports = {
     "jsx-a11y/label-has-associated-control": "off",
     "react/require-default-props": "off",
     "react/jsx-props-no-spreading": "off",
+    "no-undef": "off",
   },
 };
