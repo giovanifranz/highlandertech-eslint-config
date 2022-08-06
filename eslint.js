@@ -80,7 +80,7 @@ module.exports = {
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": "error",
     "@typescript-eslint/no-unused-vars": "error",
-    "@import/no-extraneous-dependencies": "off",
+    "import/no-extraneous-dependencies": "off",
     "no-nested-ternary": "off",
     "no-shadow": "off",
     "@typescript-eslint/no-shadow": "error",
