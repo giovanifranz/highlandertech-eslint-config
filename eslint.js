@@ -39,6 +39,7 @@ module.exports = {
       },
     },
   },
+  ignorePatterns: ["!.*", "dist", "node_modules"],
   rules: {
     "prettier/prettier": ["error", prettierConfig],
     "react/jsx-filename-extension": [1, { extensions: [".tsx", ".ts"] }],
