@@ -29,14 +29,8 @@ module.exports = {
     "prettier",
   ],
   settings: {
-    "import/resolver": {
-      typescript: {},
-      react: {
-        version: "detect",
-      },
-      node: {
-        extensions: [".js", ".jsx", ".ts", ".tsx"],
-      },
+    react: {
+      version: "detect",
     },
   },
   ignorePatterns: ["!.*", "dist", "node_modules"],
@@ -44,16 +38,7 @@ module.exports = {
     "prettier/prettier": ["error", prettierConfig],
     "react/jsx-filename-extension": [1, { extensions: [".tsx", ".ts"] }],
     "react/react-in-jsx-scope": "off",
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        js: "never",
-        jsx: "never",
-        ts: "never",
-        tsx: "never",
-      },
-    ],
+    "import/extensions": "off",
     "simple-import-sort/imports": [
       "error",
       {
@@ -95,10 +80,7 @@ module.exports = {
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": "error",
     "@typescript-eslint/no-unused-vars": "error",
-    "@import/no-extraneous-dependencies": [
-      "off",
-      { devDependencies: ["**/*.stories.tsx", "**.*.test.tsx"] },
-    ],
+    "@import/no-extraneous-dependencies": "off",
     "no-nested-ternary": "off",
     "no-shadow": "off",
     "@typescript-eslint/no-shadow": "error",
