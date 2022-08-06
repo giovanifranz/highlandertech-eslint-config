@@ -84,5 +84,6 @@ module.exports = {
     "no-nested-ternary": "off",
     "no-shadow": "off",
     "@typescript-eslint/no-shadow": "error",
+    "import/no-unresolved": "off",
   },
 };
