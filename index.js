@@ -107,6 +107,6 @@ module.exports = {
     ],
     "no-nested-ternary": "off",
     "no-shadow": "off",
-    "typescript/no-shadow": "error",
+    "@typescript-eslint/no-shadow": "error",
   },
 };
