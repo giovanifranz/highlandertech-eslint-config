@@ -1,4 +1,4 @@
-const prettierConfig = require("./prettier.js");
+var prettierConfig = require("./prettier.js");
 
 module.exports = {
   env: {
@@ -39,7 +39,6 @@ module.exports = {
       },
     },
   },
-  ignorePatterns: [".prettierrc.js", ".eslintrc.js", "**/config/*.js"],
   rules: {
     "prettier/prettier": ["error", prettierConfig],
     "react/jsx-filename-extension": [1, { extensions: [".tsx", ".ts"] }],
