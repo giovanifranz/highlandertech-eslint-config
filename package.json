@@ -8,6 +8,9 @@
     "type": "git",
     "url": "git+ssh://git@github.com/giovanifranz/highlandertech-eslint-config.git"
   },
+  "publishConfig": {
+    "registry": "https://www.npmjs.com/package/@highlandertech/eslint-config"
+  },
   "author": "Giovani Franz",
   "license": "MIT",
   "bugs": {
