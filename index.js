@@ -14,7 +14,6 @@ module.exports = {
     "plugin:prettier/recommended",
     "standard",
     "airbnb",
-    "prettier",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -29,7 +28,6 @@ module.exports = {
     "react-hooks",
     "@typescript-eslint",
     "jsx-a11y",
-    "prettier",
     "simple-import-sort",
   ],
   settings: {
