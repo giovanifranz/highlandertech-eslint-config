@@ -27,7 +27,5 @@ npm i -D eslint @highlandertech/eslint-config
 
 3. Create a `.prettierrc.js` file extending the config:
 ```
-{
   module.exports = require("@highlandertech/eslint-config/prettier")
-}
 ```
